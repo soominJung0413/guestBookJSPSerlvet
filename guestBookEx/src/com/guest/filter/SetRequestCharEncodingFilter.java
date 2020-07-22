@@ -23,7 +23,8 @@ public class SetRequestCharEncodingFilter implements Filter {
 	}
 
 
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, 
+			FilterChain chain) throws IOException, ServletException {
 		request.setCharacterEncoding("utf-8");
 		chain.doFilter(request, response);
 	}
