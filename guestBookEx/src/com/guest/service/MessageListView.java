@@ -15,6 +15,7 @@ public class MessageListView {
 	private int messageCountPerPage;
 	private int firstRow;
 	private int endRow;
+	
 	public MessageListView(List<Message> messageList,  int messageTotalCount, int currenPageNumber, int messageCountPerPage,
 			 int firstRow, int endRow) {
 		this.messageList = messageList;
